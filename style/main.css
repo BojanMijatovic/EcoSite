@@ -56,32 +56,6 @@ header {
   color: #03490B;
 }
 
-/*  Media */
-
-@media(max-width: 40rem) {
-  header img {
-    display: none;
-  }
-
-  nav {
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .nav-list {
-    flex-direction: column;
-  }
-
-  #main {
-    flex-direction: column;
-  }
-
-  #main .section-title {
-    text-align: center;
-  }
-
-}
-
 /*  Section Main */
 
 #main {
@@ -116,4 +90,42 @@ header {
   text-transform: uppercase;
   color: #03490B;
   font-weight: 700;
+}
+
+
+
+
+/*  Media */
+
+@media(max-width: 40rem) {
+  header img {
+    display: none;
+  }
+
+  nav {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  #main {
+    flex-direction: column;
+  }
+
+  #main .main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #main .section-title {
+    margin: 2rem 0;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+  }
+
+
 }
