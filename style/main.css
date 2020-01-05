@@ -1,3 +1,16 @@
+/*  Color palette */
+
+/* 
+dark-green: #03490B;
+light-grey: #E3E1D2;  
+light-green: #A3CDA2;
+yellow:  #EDBE07;
+main-green:  #4DA956;
+dark-green1:  #477338;
+light-green1: #71C984;
+*/
+
+
 /*  General style */
 
 * {
@@ -21,20 +34,26 @@ header {
 .nav-list {
   display: flex;
   justify-content: flex-end;
-  margin: 1.5rem;
+  margin: 1rem;
   list-style: none;
-
+  font-size: 1.4rem;
 }
 
 .nav-list li {
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
 .nav-list a {
   text-decoration: none;
   text-transform: uppercase;
+  color: #03490B;
+  font-weight: 500;
 }
 
+.nav-list a:active,
+.nav-list a:hover {
+  border-bottom: 2px solid #03490B;
+}
 
 /*  Media */
 
@@ -74,15 +93,26 @@ header {
   margin-bottom: 2rem;
   font-size: 3.8rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 1rem;
+  color: #03490B;
+  font-weight: 900;
 }
 
 #main .section__subtitle {
   text-align: center;
   padding: 2rem;
+  font-size: 1.8rem;
+  color: #477338;
 }
 
 #main .section__btn {
   float: right;
   margin-right: 2.5rem;
+  background-color: #E3E1D2;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  color: #03490B;
+  font-weight: 700;
 }
