@@ -10,3 +10,79 @@ html {
   font-size: 62.5%;
   font-family: 'Fira Sans Condensed', sans-serif;
 }
+
+/*  Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.5rem;
+  list-style: none;
+
+}
+
+.nav-list li {
+  padding: 1rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+/*  Media */
+
+@media(max-width: 40rem) {
+  header img {
+    display: none;
+  }
+
+  nav {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  #main {
+    flex-direction: column;
+  }
+
+  #main .section-title {
+    text-align: center;
+  }
+
+}
+
+/*  Section Main */
+
+#main {
+  display: flex;
+  align-items: center;
+}
+
+#main .section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#main .section__subtitle {
+  text-align: center;
+  padding: 2rem;
+}
+
+#main .section__btn {
+  float: right;
+  margin-right: 2.5rem;
+}
