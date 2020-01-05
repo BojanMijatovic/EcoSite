@@ -46,13 +46,14 @@ header {
 .nav-list a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #03490B;
+  color: #477338;
   font-weight: 500;
 }
 
 .nav-list a:active,
 .nav-list a:hover {
   border-bottom: 2px solid #03490B;
+  color: #03490B;
 }
 
 /*  Media */
