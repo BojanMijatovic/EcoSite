@@ -24,6 +24,8 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
 }
 
+
+
 /*  Header */
 
 header {
@@ -56,6 +58,8 @@ header {
   color: #03490B;
 }
 
+
+
 /*  Section Main */
 
 #main {
@@ -84,16 +88,102 @@ header {
   float: right;
   margin-right: 2.5rem;
   background-color: #E3E1D2;
-  padding: 0.5rem;
+  padding: 0.8rem;
   font-size: 1.4rem;
-  border-radius: 1rem;
+  border-radius: 1.2rem;
   text-transform: uppercase;
   color: #03490B;
   font-weight: 700;
+  border: none;
+  width: 13vw;
+}
+
+#main .section__btn:active,
+#main .section__btn:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background: #477338;
+}
+
+#main .section__btn:focus {
+  outline: none;
+  border: none;
+}
+
+#main .section-img img {
+  margin: 2rem;
+  border-radius: 2rem;
+  width: 45vw;
+  height: 40vh;
 }
 
 
 
+/*  Section About Us */
+
+#aboutUs {
+  background: linear-gradient(135deg, rgba(146, 255, 191, 0.5), rgba(0, 38, 97, 0.3)), url('../img/aboutUs.jpg') no-repeat center/cover;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#aboutUs .title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #03490B;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+#aboutUs .section__subtitle {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+/*  Section Product */
+
+#products .product-title {
+  font-size: 3rem;
+  color: #477338;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 2rem;
+  letter-spacing: 2px;
+}
+
+.product-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin-top: 4rem;
+}
+
+.product-item {
+  text-align: center;
+  padding: 1rem 3rem;
+}
+
+.product-item .product-item__title {
+  font-size: 2rem;
+  color: #477338;
+  margin-bottom: 1rem;
+}
+
+.product-item img {
+  height: 20vh;
+}
+
+.product-item .product-item_description {
+  font-size: 1.6rem;
+  color: #03490B;
+  margin-top: 1.6rem;
+}
 
 /*  Media */
 
@@ -127,5 +217,28 @@ header {
     letter-spacing: 2px;
   }
 
+  #main .section__btn {
+    margin: 0 auto;
+    width: 80vw;
+    cursor: pointer;
+  }
 
+  #main .section-img img {
+    width: 88vw;
+    border-radius: 1rem;
+  }
+
+  #aboutUs .title {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+  }
+
+  #aboutUs .section__subtitle {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+  }
+
+  #products .product-items {
+    flex-direction: column;
+  }
 }
