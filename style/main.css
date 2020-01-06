@@ -482,7 +482,7 @@ header {
 @media(max-width: 70rem) {
 
   #main .section-img img {
-    height: 22vh;
+    height: 18vh;
   }
 
   #main .section__btn {
@@ -500,7 +500,7 @@ header {
   }
 
   .product-item img {
-    height: 20vh;
+    height: 18vh;
     width: 25vw;
   }
 
@@ -517,7 +517,7 @@ header {
 
   #brands .brand img {
     width: 50vw;
-    height: 20vh;
+    height: 15vh;
   }
 
   #where .where-title {
@@ -525,6 +525,6 @@ header {
   }
 
   .where-map img {
-    height: 20vh;
+    height: 15vh;
   }
 }
