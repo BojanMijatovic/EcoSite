@@ -365,7 +365,11 @@ header {
   color: black;
 }
 
-/*  Media */
+
+/* ------------ */
+
+
+/* Media MAX-Width  40 Rem */
 
 @media(max-width: 40rem) {
   header img {
@@ -471,7 +475,7 @@ header {
 }
 
 
-
+/* ------------ */
 
 
 /* Media MAX-Width  70 Rem */
