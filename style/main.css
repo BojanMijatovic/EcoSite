@@ -145,6 +145,8 @@ header {
   padding: 1rem;
 }
 
+
+
 /*  Section Product */
 
 #products .product-title {
@@ -185,6 +187,61 @@ header {
   margin-top: 1.6rem;
 }
 
+
+
+
+/* Section  Brands */
+
+#brands {
+  margin-top: 4rem;
+}
+
+#brands .brands-title {
+  font-size: 3rem;
+  color: #03490B;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#brands .brands-withUs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#brands .brand {
+  padding: 2rem;
+}
+
+#brands .brand img {
+  width: 20vw;
+  border: #477338 2px solid;
+  border-radius: 2rem;
+  height: 15vh;
+}
+
+#brands .brand img:active,
+#brands .brand img:hover {
+  cursor: pointer;
+  box-shadow: #03490B 1px 1px 2px 1px;
+}
+
+#brands .brand p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: #477338;
+}
+
+#brands .brand p:active,
+#brands .brand p:hover {
+  color: #03490B;
+}
+
+
+
 /*  Section Where */
 
 #where .where-title {
@@ -199,7 +256,7 @@ header {
 
 .border {
   border-bottom: #03490B solid 3px;
-  width: 20vw;
+  width: 23vw;
   margin: 0 auto;
   margin-bottom: 3rem;
 }
@@ -214,7 +271,6 @@ header {
   text-align: center;
   margin: auto;
 }
-
 
 .where__info .where-description__city {
   font-size: 2rem;
@@ -239,7 +295,6 @@ header {
 .where__info .where-description__phone:hover {
   color: #03490B;
 }
-
 
 .where__info .where-description__mail {
   color: #477338;
@@ -267,6 +322,47 @@ header {
 .where-map img {
   height: 30vh;
   margin: 0 auto;
+}
+
+/*  Section footer */
+
+#contactUs {
+  background: linear-gradient(30deg, rgba(168, 236, 204, 1) 0%, rgba(6, 201, 127, 1) 100%);
+}
+
+#contactUs .contact {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+#contactUs .contact-links {
+  margin: 1rem;
+}
+
+#contactUs .contact__link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #03490B;
+  padding: 0.5rem;
+}
+
+#contactUs .contact__link:active,
+#contactUs .contact__link:hover {
+  font-weight: 500;
+}
+
+.design {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: #03490B;
+  margin-top: 1rem;
+}
+
+.design:active,
+.design:hover {
+  color: black;
 }
 
 /*  Media */
@@ -313,7 +409,7 @@ header {
   }
 
   #aboutUs .title {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     margin-bottom: 0;
   }
 
@@ -326,9 +422,17 @@ header {
     flex-direction: column;
   }
 
+  #products .product-title {
+    font-size: 2.5rem;
+  }
+
   .where {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  #where .where-title {
+    font-size: 2.5rem;
   }
 
   .where-title {
@@ -341,5 +445,74 @@ header {
 
   .where-map img {
     width: 85vw;
+  }
+
+  .brands-withUs {
+    flex-direction: column;
+  }
+
+  #brands .brands-title {
+    font-size: 2.5rem;
+  }
+
+  #brands .brand img {
+    width: 50vw;
+  }
+
+  #contactUs .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contactUs .contact__link {
+    padding: 0;
+    margin: 0.5rem;
+  }
+}
+
+
+
+
+
+/* Media MAX-Width  70 Rem */
+@media(max-width: 70rem) {
+
+  #main .section-img img {
+    height: 22vh;
+  }
+
+  #main .section__btn {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+  }
+
+  .product-item img {
+    height: 10vh;
+    width: 15vw;
+  }
+
+
+  #brands .brands-title {
+    font-size: 2.8rem;
+  }
+
+  #brands .brands-withUs {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #brands .brand img {
+    width: 45vw;
+    height: 20vh;
+  }
+
+  #where .where-title {
+    font-size: 2.8rem;
+  }
+
+  .where-map img {
+    height: 20vh;
   }
 }
