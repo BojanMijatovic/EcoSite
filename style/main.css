@@ -491,9 +491,17 @@ header {
     border-radius: 1rem;
   }
 
+  #products .product-items {
+    flex-direction: column;
+  }
+
+  #products .product-item {
+    margin: 2rem;
+  }
+
   .product-item img {
-    height: 10vh;
-    width: 15vw;
+    height: 20vh;
+    width: 25vw;
   }
 
 
@@ -508,7 +516,7 @@ header {
   }
 
   #brands .brand img {
-    width: 45vw;
+    width: 50vw;
     height: 20vh;
   }
 
